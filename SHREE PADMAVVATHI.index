@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padmavati Krushi Aushadi Kendra</title>
+
+<style>
+:root{
+    --green:#1b5e20;
+    --light-green:#4caf50;
+    --bg:#f4f7f3;
+    --dark:#2f2f2f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--dark);
+}
+
+/* HEADER */
+header{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:var(--green);
+    font-size:24px;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:20px;
+    color:#333;
+    font-weight:600;
+}
+
+/* HERO */
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1605000797499-95a51c5269ae");
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+    max-width:600px;
+}
+
+.hero-btn a{
+    display:inline-block;
+    margin-right:15px;
+    padding:14px 30px;
+    border-radius:50px;
+    background:var(--light-green);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:var(--green);
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.product img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.product h3{
+    margin:15px 0;
+    color:var(--green);
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service{
+    background:linear-gradient(to bottom,#e8f5e9,#ffffff);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.service h3{
+    color:var(--green);
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:17px;
+}
+
+iframe{
+    width:100%;
+    height:320px;
+    border:none;
+    border-radius:20px;
+}
+
+/* FOOTER */
+footer{
+    background:var(--green);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero-content h2{font-size:34px;}
+    .about,.contact{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <h1>Padmavati Krushi Aushadi</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+    <h2>Trusted Agriculture & Fertilizer Store</h2>
+    <p>Quality Fertilizers, Seeds & Crop Solutions for Better Yield</p>
+    <div class="hero-btn">
+        <a href="tel:+918550047165">Call Now</a>
+        <a href="https://wa.me/918550047165">WhatsApp</a>
+    </div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-title">
+    <h2>About Us</h2>
+</div>
+<div class="about">
+    <img src="https://images.unsplash.com/photo-1598514982301-2b2b3a0c0b09">
+    <p>
+        Padmavati Krushi Aushadi Kendra is a trusted agriculture and fertilizer shop
+        serving farmers in Hubli and surrounding areas.  
+        We provide genuine fertilizers, seeds, and expert crop guidance
+        to ensure higher yield and healthy soil.
+    </p>
+</div>
+</section>
+
+<section id="products">
+<div class="section-title">
+    <h2>Our Products</h2>
+</div>
+<div class="products">
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924">
+        <h3>Fertilizers</h3>
+        <p>Urea, DAP, NPK, Micronutrients</p>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449">
+        <h3>Organic Solutions</h3>
+        <p>Bio fertilizers & soil enhancers</p>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1582515073490-39981397c445">
+        <h3>Seeds</h3>
+        <p>High quality crop seeds</p>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="section-title">
+    <h2>Our Services</h2>
+</div>
+<div class="services">
+    <div class="service">
+        <h3>Crop Consultation</h3>
+        <p>Expert advice for better farming results</p>
+    </div>
+    <div class="service">
+        <h3>Soil Health Guidance</h3>
+        <p>Improve productivity & fertility</p>
+    </div>
+    <div class="service">
+        <h3>Bulk Orders</h3>
+        <p>Best pricing for farmers</p>
+    </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title">
+    <h2>Contact Us</h2>
+</div>
+<div class="contact">
+    <div class="contact-info">
+        <p><strong>📍 Address:</strong><br>
+        NH-4 Service Road, Gandhinagar, M K Hubli, Karnataka</p>
+
+        <p><strong>📞 Phone:</strong> +91 85500 47165</p>
+        <p><strong>💬 WhatsApp:</strong> +91 85500 47165</p>
+        <p><strong>🕒 Timings:</strong> 9:00 AM – 7:00 PM</p>
+    </div>
+
+    <iframe src="https://www.google.com/maps?q=Shree%20Padmavati%20Krushi%20Aushadi%20Kendra&output=embed"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Padmavati Krushi Aushadi Kendra | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
